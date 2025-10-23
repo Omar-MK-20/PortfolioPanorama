@@ -161,21 +161,6 @@ Each component is modular and can be customized:
 - Call-to-action elements
 - Responsive grid layout
 
-## Performance Optimizations
-
-- **Lazy Loading**: Images load only when needed
-- **Smooth Scrolling**: Native CSS scroll behavior
-- **Optimized Images**: Responsive image handling
-- **Efficient Animations**: CSS-based animations
-- **TypeScript**: Compile-time error checking
-
-## Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
 ## Contributing
 
 1. Fork the repository
@@ -187,12 +172,6 @@ Each component is modular and can be customized:
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-For questions or support, please contact:
-- Email: hello@panoramadesign.com
-- Phone: +1 (555) 123-4567
 
 ---
 

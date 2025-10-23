@@ -54,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({ items, activeSection, onSection
                   onClick={() => handleNavClick(item.href, item.id)}
                   className={`px-3 py-2 text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 ${
                     activeSection === item.id
-                      ? 'text-terracotta border-b-2 border-terracotta'
+                      ? `text-terracotta border-b-2 border-terracotta`
                       : 'text-gray-500 hover:text-terracotta hover:border-b-2 hover:border-terracotta'
                   }`}
                 >
@@ -122,10 +122,10 @@ const Navigation: React.FC<NavigationProps> = ({ items, activeSection, onSection
             <button
               key={item.id}
               onClick={() => handleNavClick(item.href, item.id)}
-              className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 ${
+              className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 hover:bg-gray-200 rounded-md ${
                 activeSection === item.id
-                  ? 'text-terracotta bg-terracotta/10'
-                  : 'text-gray-700 hover:text-terracotta hover:bg-gray-50'
+                  ? `text-terracotta bg-terracotta/10 ${isMobileMenuOpen && 'text-black'}`
+                  : 'text-gray-700 hover:text-terracotta'
               }`}
             >
               {item.label}
