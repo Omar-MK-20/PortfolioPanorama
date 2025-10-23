@@ -68,7 +68,7 @@ const Navigation: React.FC<NavigationProps> = ({ items, activeSection, onSection
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-terracotta hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 transition-colors duration-300"
+              className={`inline-flex items-center justify-center p-2 rounded-md hover:text-terracotta hover:bg-gray-400/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-gray-100'}`}
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>

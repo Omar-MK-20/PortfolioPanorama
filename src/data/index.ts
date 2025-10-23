@@ -13,15 +13,15 @@ export const companyInfo: CompanyInfo = {
     name: 'Ali Salah Architecture',
     description: 'Creating exceptional interior spaces that blend functionality with aesthetic beauty.',
     email: 'alisalaharch@gmail.com',
-    phone: '+1 (555) 123-4567',
+    phone: '+201111242265',
     address: 'Ismael Mohamed Tower, 2 Taha Hussein, St, Zamalek, Giza',
     missionStatement: 'We believe that exceptional interior design transforms not just spaces, but lives. Our mission is to create environments that inspire, comfort, and reflect the unique personality of each client.',
     designPhilosophy: 'Our design philosophy centers on the harmonious balance between form and function, where every element serves a purpose while contributing to the overall aesthetic narrative.',
     socialLinks: [
-        { platform: 'Instagram', url: 'https://instagram.com/panoramadesign', icon: 'instagram' },
-        { platform: 'Facebook', url: 'https://facebook.com/panoramadesign', icon: 'facebook' },
-        { platform: 'LinkedIn', url: 'https://linkedin.com/company/panoramadesign', icon: 'linkedin' },
-        { platform: 'Pinterest', url: 'https://pinterest.com/panoramadesign', icon: 'pinterest' },
+        { platform: 'Instagram', url: 'https://instagram.com/alisalaharch/', icon: 'instagram' },
+        { platform: 'Facebook', url: 'https://facebook.com/alisalaharch/', icon: 'facebook' },
+        { platform: 'LinkedIn', url: 'https://www.linkedin.com/company/alisalaharch/', icon: 'linkedin' },
+        // { platform: 'Pinterest', url: 'https://pinterest.com/panoramadesign', icon: 'pinterest' },
     ],
 };
 

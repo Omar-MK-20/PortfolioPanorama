@@ -5,12 +5,15 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  css: {
-    postcss: {
-      plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-      ],
-    },
-  },
+  server: {
+    host: "0.0.0.0"
+  }
+  // css: {
+  //   postcss: {
+  //     plugins: [
+  //       require('tailwindcss'),
+  //       require('autoprefixer'),
+  //     ],
+  //   },
+  // },
 })

@@ -103,26 +103,10 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-display font-bold mb-4">Panorama Design Studio</h3>
+              <h3 className="text-xl font-display font-bold mb-4">{companyInfo.name}</h3>
               <p className="text-gray-300 mb-4">
                 Creating exceptional interior spaces that blend functionality with aesthetic beauty.
               </p>
-              <div className="flex space-x-4">
-                {companyInfo.socialLinks.map((social: any) => (
-                  <a
-                    key={social.platform}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    <span className="sr-only">{social.platform}</span>
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                    </svg>
-                  </a>
-                ))}
-              </div>
             </div>
 
             {/* Quick Links */}
@@ -160,7 +144,7 @@ function App() {
 
           {/* Copyright */}
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Panorama Design Studio. All rights reserved.</p>
+            <p>&copy; 2025 <a href="https://github.com/Omar-MK-20">Omar MK</a>. All rights reserved.</p>
           </div>
         </div>
       </footer>
