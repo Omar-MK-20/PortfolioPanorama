@@ -4,46 +4,58 @@ A modern, responsive single-page application built with React, TypeScript, and T
 
 ## Features
 
-### 🎨 **Modern Design System**
-- Neutral, elegant color palette inspired by interior design aesthetics
-- Custom TailwindCSS configuration with warm accents
-- Smooth animations and transitions
-- Glass morphism effects and subtle shadows
+### **Navigation Bar**
 
-### 📱 **Responsive Design**
-- Mobile-first approach with TailwindCSS breakpoints
-- Sticky navigation with mobile hamburger menu
-- Responsive grid layouts for all screen sizes
-- Touch-friendly interfaces
+- Sticky header that stays visible while scrolling
+- Smooth scroll navigation to all sections
+- Mobile hamburger menu with animations
+- Active section highlighting
+- Logo/company name with hover effects
 
-### 🖼️ **Interactive Gallery**
-- Responsive image grid with hover effects
-- Lightbox/modal functionality for full-size viewing
-- Lazy loading for optimal performance
+### **Hero Section**
+
+- Full-width background image
+- Dark overlay for text readability
+- AI-generated title and description
+- Call-to-action button with smooth scroll
+- Responsive typography scaling
+
+### **Interactive Gallery**
+
+- Responsive grid layout (1-3 columns based on screen size)
+- Hover effects with image scale and information overlay
+- Lightbox modal with navigation controls
+- Lazy loading for performance
 - Image captions with room types and categories
 
-### 🌐 **Panorama Viewer**
-- Responsive iframe container with 16:9 aspect ratio
-- Loading states and error handling
-- Navigation instructions for users
-- Smooth transitions
+### **Panorama Viewer**
 
-### 🏢 **About Section**
-- Company information and contact details
-- Social media integration
-- Mission statement and design philosophy
+- Responsive iframe container
+- Loading spinner with TailwindCSS animations
+- Error state handling
+- Navigation instructions
+- Smooth loading transitions
+- Built with [**Marzipano**](https://www.marzipano.net)
+
+### **About Section**
+
+- Company information and mission statement
+- Contact details with icons
+- Social media links with platform-specific icons
 - Call-to-action elements
+- Responsive grid layout
 
 ## Tech Stack
 
 - **React 19** - Modern React with hooks
 - **TypeScript** - Type-safe development
 - **TailwindCSS 4** - Utility-first CSS framework
+- **Marzipano** - Tool generates a virtual 360° media viewer for the modern web.
 - **Vite** - Fast build tool and dev server
 
 ## Project Structure
 
-```
+``` bash
 src/
 ├── components/          # React components
 │   ├── Navigation.tsx   # Sticky navigation bar
@@ -63,26 +75,30 @@ src/
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
-```bash
-git clone <repository-url>
-cd PanoramaTest
-```
+
+    ```bash
+    git clone <repository-url>
+    cd PortfolioPanorama
+    ```
 
 2. Install dependencies:
-```bash
-npm install
-```
+
+    ```bash
+    npm install
+    ```
 
 3. Start the development server:
-```bash
-npm run dev
-```
+
+    ```bash
+    npm run dev
+    ```
 
 4. Open your browser and navigate to `http://localhost:5173`
 
@@ -97,6 +113,7 @@ The built files will be in the `dist` directory.
 ## Customization
 
 ### Colors
+
 The color palette is defined in `tailwind.config.js` and can be customized:
 
 ```javascript
@@ -109,6 +126,7 @@ colors: {
 ```
 
 ### Content
+
 Update the sample data in `src/data/index.ts`:
 
 - **Company Information**: Name, description, contact details
@@ -117,49 +135,13 @@ Update the sample data in `src/data/index.ts`:
 - **Panorama Data**: Virtual tour URL
 
 ### Components
+
 Each component is modular and can be customized:
 
 - **Navigation**: Add/remove menu items
 - **Gallery**: Modify grid layout or add filtering
 - **Panorama**: Change aspect ratio or add custom controls
 - **About**: Update company information and social links
-
-## Features in Detail
-
-### Navigation Bar
-- Sticky header that stays visible while scrolling
-- Smooth scroll navigation to all sections
-- Mobile hamburger menu with animations
-- Active section highlighting
-- Logo/company name with hover effects
-
-### Hero Section
-- Full-width background image
-- Dark overlay for text readability
-- AI-generated title and description
-- Call-to-action button with smooth scroll
-- Responsive typography scaling
-
-### Gallery Component
-- Responsive grid layout (1-3 columns based on screen size)
-- Hover effects with image scale and information overlay
-- Lightbox modal with navigation controls
-- Lazy loading for performance
-- Image captions with room types and categories
-
-### Panorama Viewer
-- Responsive iframe container
-- Loading spinner with TailwindCSS animations
-- Error state handling
-- Navigation instructions
-- Smooth loading transitions
-
-### About Section
-- Company information and mission statement
-- Contact details with icons
-- Social media links with platform-specific icons
-- Call-to-action elements
-- Responsive grid layout
 
 ## Contributing
 
