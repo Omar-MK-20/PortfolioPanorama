@@ -1,73 +1,199 @@
-# React + TypeScript + Vite
+# Interior Design Portfolio SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive single-page application built with React, TypeScript, and TailwindCSS that showcases interior design projects through an elegant interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🎨 **Modern Design System**
+- Neutral, elegant color palette inspired by interior design aesthetics
+- Custom TailwindCSS configuration with warm accents
+- Smooth animations and transitions
+- Glass morphism effects and subtle shadows
 
-## React Compiler
+### 📱 **Responsive Design**
+- Mobile-first approach with TailwindCSS breakpoints
+- Sticky navigation with mobile hamburger menu
+- Responsive grid layouts for all screen sizes
+- Touch-friendly interfaces
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🖼️ **Interactive Gallery**
+- Responsive image grid with hover effects
+- Lightbox/modal functionality for full-size viewing
+- Lazy loading for optimal performance
+- Image captions with room types and categories
 
-## Expanding the ESLint configuration
+### 🌐 **Panorama Viewer**
+- Responsive iframe container with 16:9 aspect ratio
+- Loading states and error handling
+- Navigation instructions for users
+- Smooth transitions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🏢 **About Section**
+- Company information and contact details
+- Social media integration
+- Mission statement and design philosophy
+- Call-to-action elements
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React 19** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **TailwindCSS 4** - Utility-first CSS framework
+- **Vite** - Fast build tool and dev server
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── Navigation.tsx   # Sticky navigation bar
+│   ├── Hero.tsx         # Hero section with background
+│   ├── Gallery.tsx      # Image gallery with lightbox
+│   ├── Panorama.tsx     # Panorama viewer
+│   └── About.tsx         # About us section
+├── types/               # TypeScript interfaces
+│   └── index.ts         # All type definitions
+├── data/                # Sample data
+│   └── index.ts         # Mock data for components
+├── App.tsx              # Main application component
+├── main.tsx             # Application entry point
+└── index.css            # Global styles and CSS variables
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd PanoramaTest
 ```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Customization
+
+### Colors
+The color palette is defined in `tailwind.config.js` and can be customized:
+
+```javascript
+colors: {
+  'terracotta': '#d2691e',    // Primary accent
+  'warm-brown': '#8b4513',    // Secondary accent
+  'charcoal': '#333333',      // Text color
+  // ... more colors
+}
+```
+
+### Content
+Update the sample data in `src/data/index.ts`:
+
+- **Company Information**: Name, description, contact details
+- **Gallery Images**: Add your project renders
+- **Hero Content**: Title, description, background image
+- **Panorama Data**: Virtual tour URL
+
+### Components
+Each component is modular and can be customized:
+
+- **Navigation**: Add/remove menu items
+- **Gallery**: Modify grid layout or add filtering
+- **Panorama**: Change aspect ratio or add custom controls
+- **About**: Update company information and social links
+
+## Features in Detail
+
+### Navigation Bar
+- Sticky header that stays visible while scrolling
+- Smooth scroll navigation to all sections
+- Mobile hamburger menu with animations
+- Active section highlighting
+- Logo/company name with hover effects
+
+### Hero Section
+- Full-width background image
+- Dark overlay for text readability
+- AI-generated title and description
+- Call-to-action button with smooth scroll
+- Responsive typography scaling
+
+### Gallery Component
+- Responsive grid layout (1-3 columns based on screen size)
+- Hover effects with image scale and information overlay
+- Lightbox modal with navigation controls
+- Lazy loading for performance
+- Image captions with room types and categories
+
+### Panorama Viewer
+- Responsive iframe container
+- Loading spinner with TailwindCSS animations
+- Error state handling
+- Navigation instructions
+- Smooth loading transitions
+
+### About Section
+- Company information and mission statement
+- Contact details with icons
+- Social media links with platform-specific icons
+- Call-to-action elements
+- Responsive grid layout
+
+## Performance Optimizations
+
+- **Lazy Loading**: Images load only when needed
+- **Smooth Scrolling**: Native CSS scroll behavior
+- **Optimized Images**: Responsive image handling
+- **Efficient Animations**: CSS-based animations
+- **TypeScript**: Compile-time error checking
+
+## Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or support, please contact:
+- Email: hello@panoramadesign.com
+- Phone: +1 (555) 123-4567
+
+---
+
+Built with ❤️ for interior design professionals
