@@ -41,7 +41,7 @@ const Navigation: React.FC<NavigationProps> = ({ items, activeSection, onSection
               onClick={() => handleNavClick('#home', 'home')}
               className={`text-2xl font-display font-bold hover:text-terracotta transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 ${isScrolled ? 'text-gray-900' : 'text-white'}`}
             >
-              Panorama
+              Malqa Basement
             </button>
           </div>
 
